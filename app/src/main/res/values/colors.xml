@@ -11,6 +11,7 @@
     <color name="colorGoogleSignInPressed">#b02513</color>
     <color name="colorEmailSignIn">#009688</color>
     <color name="colorEmailSignInPressed">#004d40</color>
+    <color name="com_facebook_blue">#4267B2</color>
 
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
