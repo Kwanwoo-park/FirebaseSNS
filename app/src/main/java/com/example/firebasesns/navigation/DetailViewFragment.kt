@@ -25,6 +25,7 @@ class DetailViewFragment: Fragment() {
     private var firebase: FirebaseFirestore? = null
     private var imageSnapshot: ListenerRegistration? = null
     private var mainView: View? = null
+    private lateinit var detailviewfragment_recyclerview: RecyclerView
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -41,7 +42,7 @@ class DetailViewFragment: Fragment() {
 
     override fun onResume() {
         super.onResume()
-        val detailviewfragment_recyclerview: RecyclerView = mainView!!.findViewById(R.id.detailviewfragment_recyclerview)
+        detailviewfragment_recyclerview = mainView!!.findViewById(R.id.detailviewfragment_recyclerview)
         detailviewfragment_recyclerview.layoutManager = LinearLayoutManager(activity)
         detailviewfragment_recyclerview.adapter = DetailRecyclerViewAdapter()
 

@@ -37,7 +37,13 @@
         android:gravity="bottom"
         android:orientation="vertical">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp">
+
+            <EditText
                 android:id="@+id/email_edittext"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -45,6 +51,13 @@
                 android:layout_marginStart="20dp"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp">
 
             <EditText
                 android:id="@+id/password_edittext"
@@ -54,6 +67,7 @@
                 android:layout_marginStart="20dp"
                 android:hint="@string/password"
                 android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/email_login_button"
