@@ -18,10 +18,10 @@ import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
     lateinit var progress_bar: ProgressBar
-    private lateinit var bottom_navigation: BottomNavigationView
-    private lateinit var toolbar_title_image: ImageView
-    private lateinit var toolbar_btn_back: ImageView
-    private lateinit var toolbar_username: TextView
+    lateinit var bottom_navigation: BottomNavigationView
+    lateinit var toolbar_title_image: ImageView
+    lateinit var toolbar_btn_back: ImageView
+    lateinit var toolbar_username: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
